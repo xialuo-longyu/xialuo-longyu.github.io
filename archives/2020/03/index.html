@@ -5,16 +5,16 @@
   
 
   
-  <title>Archives: 2020/3 | Hexo</title>
+  <title>Archives: 2020/3 | longyu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="longyu">
 <meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="longyu">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="longyu" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -35,7 +35,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">longyu</a>
       </h1>
       
     </div>
@@ -63,6 +63,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-longyu" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/24/longyu/" class="article-date">
+  <time datetime="2020-03-24T12:24:12.000Z" itemprop="datePublished">Mar 24 2020</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/24/longyu/">longyu</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/24/longyu/" data-id="ck88qr3ue0003zsvnd4gt7du3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-article-title" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/22/article-title/" class="article-date">
@@ -89,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/22/article-title/" data-id="ck84h28lh0000bovn25tr42df" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/22/article-title/" data-id="ck88qr3u40001zsvn9spbgozw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/22/hello-world/" data-id="ck84h28ms0001bovn7o9o1e5s" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/22/hello-world/" data-id="ck88qr3ud0002zsvnduechzu9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,6 +215,10 @@
       <ul>
         
           <li>
+            <a href="/2020/03/24/longyu/">longyu</a>
+          </li>
+        
+          <li>
             <a href="/2020/03/22/article-title/">article title</a>
           </li>
         
@@ -202,7 +242,46 @@
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+  <script language=javascript>
+    function siteTime() {
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth() + 1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      ar todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+      year - 作为date对象的年份，为4位年份值
+      month - 0-11之间的整数，做为date对象的月份
+      day - 1-31之间的整数，做为date对象的天数 
+      hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+      minutes - 0-59之间的整数，做为date对象的分钟数 
+      seconds - 0-59之间的整数，做为date对象的秒数 
+      microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+      var t1 = Date.UTC(2020, 03, 26, 11, 40, 00); //北京时间2020-3-26 19:41:00
+      var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+      var diff = t2 - t1;
+      var diffYears = Math.floor(diff / years);
+      var diffDays = Math.floor((diff / days) - diffYears * 365);
+      var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+      var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+      var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+      document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+      }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+      siteTime();
+    </Script>
+
+
+
 </footer>
+
     </div>
     <nav id="mobile-nav">
   
@@ -231,5 +310,5 @@
 
 
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
 </html>
